@@ -6,6 +6,7 @@ Este proyecto demuestra la aplicación del Modelo de Espacio Vectorial (VSM) par
 Representar documentos de texto como vectores numéricos utilizando TF-IDF.
 Calcular la similitud semántica entre pares de documentos usando la similitud del coseno.
 Visualizar la matriz de similitud para una comprensión intuitiva de las relaciones entre documentos.
+
 🛠️ Tecnologías Utilizadas
 Python 3.x
 scikit-learn (sklearn): Para la vectorización TF-IDF y el cálculo de la similitud del coseno.
@@ -13,6 +14,7 @@ pandas: Para la manipulación y visualización de datos en formato tabular.
 matplotlib: Para la creación de gráficos.
 seaborn: Para la mejora estética de los gráficos, especialmente el mapa de calor.
 numpy: Para operaciones numéricas básicas.
+
 🚀 Cómo Ejecutar el Proyecto
 Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
@@ -25,8 +27,6 @@ Asegúrate de tener Python instalado. Luego, instala las librerías necesarias u
 pip install scikit-learn pandas matplotlib seaborn numpy
 3. Ejecuta el Script
 Una vez instaladas las dependencias, simplemente ejecuta el script Python principal:
-
-Bash
 
 python nombre_de_tu_script.py
 (Reemplaza nombre_de_tu_script.py con el nombre real de tu archivo Python, por ejemplo, similitud_documentos.py)
@@ -53,7 +53,9 @@ cosine_similarity de sklearn.metrics.pairwise calcula la similitud coseno entre 
 Visualización:
 La matriz de similitud se convierte en un DataFrame de pandas para una mejor manipulación y visualización.
 seaborn.heatmap se emplea para crear un mapa de calor que representa visualmente la matriz de similitud, haciendo más fácil identificar las relaciones entre documentos.
+
 📊 Resultados y Visualización
+
 Al ejecutar el script, verás la matriz TF-IDF (en formato DataFrame), la matriz de similitud del coseno (también en DataFrame) y un análisis textual de las similitudes entre los documentos. Además, se generará y mostrará una gráfica de mapa de calor similar a la siguiente:
 
 --- Matriz de Similitud del Coseno ---
@@ -69,7 +71,9 @@ En el mapa de calor:
 Las celdas más claras (o más "cálidas", dependiendo del cmap) indican una mayor similitud.
 Las celdas más oscuras (o más "frías") indican una menor similitud.
 La diagonal siempre será 1.00, ya que un documento es idéntico a sí mismo.
+
 🔮 Posibles Mejoras
+
 Implementar preprocesamiento de texto más avanzado (lematización, eliminación de puntuación).
 Permitir que el usuario ingrese sus propios documentos o cargue un corpus desde un archivo.
 Añadir una función para buscar documentos relevantes dada una consulta del usuario.
